@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+			<audio id="hover-sound5">
+  				<source src="stupid.mp4" type="audio/mpeg">
+  				<source src="stupid.ogg" type="audio/ogg">
+			</audio>
+
+    		<div id=question>
+    			<p class=alert id=questionOne>
+    				Great! We made it in time. We need a plan. <br> What should we organize to achieve first?
+    		</div>
+
+
+    		<button class="optionOne" id="baldie" onclick="alert('The robot is attacking us!')">Go for baldie</button>
+
+    		<button class="optionTwo" id="robot" onclick="nextPage()">Attack the robot</button>
+
+			<audio id="hover-sound6">
+  				<source src="robot.mp4" type="audio/mpeg">
+  				<source src="robot.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+<script type="text/javascript">
+	       	function nextPage() {
+            window.location.href = 'questionThree.html';
+       			 }
+
+       			const sound5 = document.getElementById('hover-sound5');
+				const sound6 = document.getElementById('hover-sound6');
+				const button5 = document.getElementById('baldie');
+				const button6 = document.getElementById('robot');
+
+button5.addEventListener('mouseover', function() {
+  sound5.play();
+});
+
+button5.addEventListener('mouseout', function() {
+  sound5.pause();
+  sound5.currentTime = 0; // Reset to the beginning
+});
+
+button6.addEventListener('mouseover', function() {
+  sound6.play();
+});
+
+button6.addEventListener('mouseout', function() {
+  sound6.pause();
+  sound6.currentTime = 0; // Reset to the beginning
+});
+</script>
+<!javascript code below>
+<script src="javascript.js"></script>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+		
+
+    		<div id=question>
+    			<p class=alert id=questionOne>
+    				We successfully chewed through the infrastructure. The robot collapsed onto E*** A****.<br> How should we celebrate?
+    		</div>
+
+
+    		<button class="optionOne" id="pizza" onclick="alert('Fuck the police comin straight from the underground!')">Pizza</button>
+
+    		<button class="optionTwo" id="travel" onclick="nextPage()">Party</button>
+			 <script>
+        	function nextPage() {
+            window.location.href = 'index.html';
+       			 }
+    		</script>
+
+			<audio id="hover-sound2">
+  				<source src="train.mp4" type="audio/mpeg">
+  				<source src="train.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+<script type="text/javascript">
+</script>
+<!javascript code below>
+<script src="javascript.js"></script>

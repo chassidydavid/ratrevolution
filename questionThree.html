@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+		
+			<audio id="hover-sound7">
+  				<source src="rat.mp4" type="audio/mpeg">
+  				<source src="rat.ogg" type="audio/ogg">
+			</audio>
+
+    		<div id=question>
+    			<p class=alert id=questionOne>
+    				We're inside the robot. <br> What now?
+    		</div>
+
+
+    		<button class="optionOne" id="chew" onclick="alert('Harder!')">Chew</button>
+
+    		<button class="optionTwo" id="piss" onclick="nextPage()">Piss</button>
+		
+
+			<audio id="hover-sound8">
+  				<source src="chew.mp4" type="audio/mpeg">
+  				<source src="chew.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+<script type="text/javascript">
+	function nextPage() {
+            window.location.href = 'questionFour.html';
+       			 }
+
+       			const sound7 = document.getElementById('hover-sound7');
+				const sound8 = document.getElementById('hover-sound8');
+				const button7 = document.getElementById('chew');
+				const button8 = document.getElementById('piss');
+
+button7.addEventListener('mouseover', function() {
+  sound7.play();
+});
+
+button7.addEventListener('mouseout', function() {
+  sound7.pause();
+  sound7.currentTime = 0; // Reset to the beginning
+});
+
+button8.addEventListener('mouseover', function() {
+  sound8.play();
+});
+
+button8.addEventListener('mouseout', function() {
+  sound8.pause();
+  sound8.currentTime = 0; // Reset to the beginning
+});
+</script>
+<!javascript code below>
+<script src="javascript.js"></script>

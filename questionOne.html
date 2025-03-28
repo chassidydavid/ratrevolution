@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+		
+			<audio id="hover-sound3">
+  				<source src="LTrain.mp4" type="audio/mpeg">
+  				<source src="LTrain.ogg" type="audio/ogg">
+			</audio>
+
+    		<div id=question>
+    			<p class=alert id=questionOne>
+    				Quick! Follow me! We heard E*** A**** will be unveiling a surveillance robot at Times Square. <br> We have 30 minutes until it's unveiled. Which train should we catch?
+    			</p>
+    		</div>
+
+
+    		<button class="optionOne" id="trainOne" onclick="alert('You caught an L! The L train is 45 minutes away.')">L TRAIN.</button>
+
+    		<button class="optionTwo" id="trainTwo" onclick="nextPage()">4 TRAIN</button>
+	
+
+			<audio id="hover-sound4">
+  				<source src="4Train.mp4" type="audio/mpeg">
+  				<source src="4Train.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+
+
+<script type="text/javascript">
+
+        	function nextPage() {
+            window.location.href = 'questionTwo.html';
+       			 }
+
+       			const sound3 = document.getElementById('hover-sound3');
+				const sound4 = document.getElementById('hover-sound4');
+				const button3 = document.getElementById('trainOne');
+				const button4 = document.getElementById('trainTwo');
+
+button3.addEventListener('mouseover', function() {
+  sound3.play();
+});
+
+button3.addEventListener('mouseout', function() {
+  sound3.pause();
+  sound3.currentTime = 0; // Reset to the beginning
+});
+
+button4.addEventListener('mouseover', function() {
+  sound4.play();
+});
+
+button4.addEventListener('mouseout', function() {
+  sound4.pause();
+  sound4.currentTime = 0; // Reset to the beginning
+});
+
+</script>
+<script src="javascript.js"></script>

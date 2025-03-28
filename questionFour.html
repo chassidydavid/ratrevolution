@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+		
+			<audio id="hover-sound9">
+  				<source src="popp.mp4" type="audio/mpeg">
+  				<source src="popo.ogg" type="audio/ogg">
+			</audio>		
+
+    		<div id=question>
+    			<p class=alert id=final>
+    				We successfully chewed through and damaged the infrastructure. The robot collapsed onto E*** A****. <br> How should we celebrate?
+    		</div>
+
+
+    		<button class="optionOne" id="pizza" onclick="alert('Fuck the police comin straight from the underground!')">Pizza</button>
+
+    		<button class="optionTwo" id="travel" onclick="nextPage()">Party</button>
+
+
+			<audio id="hover-sound10">
+  				<source src="rat.mp4" type="audio/mpeg">
+  				<source src="rat.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+<script type="text/javascript">
+	function nextPage() {
+            window.location.href = 'index.html';
+       			 }
+
+       			const sound9 = document.getElementById('hover-sound9');
+				const sound10 = document.getElementById('hover-sound10');
+				const button9 = document.getElementById('pizza');
+				const button10 = document.getElementById('travel');
+				const final = document.getElementById('final');
+
+
+button9.addEventListener('mouseover', function() {
+  sound10.play();
+});
+
+button9.addEventListener('mouseout', function() {
+  sound10.pause();
+  sound10.currentTime = 0; // Reset to the beginning
+});
+
+button10.addEventListener('mouseover', function() {
+  sound10.play();
+});
+
+button10.addEventListener('mouseout', function() {
+  sound10.pause();
+  sound10.currentTime = 0; // Reset to the beginning
+});
+
+final.addEventListener('mouseover', function() {
+  sound9.play();
+});
+
+final.addEventListener('mouseout', function() {
+  sound9.pause();
+  sound9.currentTime = 0; // Reset to the beginning
+});
+</script>
+<!javascript code below>
+<script src="javascript.js"></script>

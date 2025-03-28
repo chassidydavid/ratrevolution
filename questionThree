@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+
+<!css code below>
+<style src="style.css"></style>
+<link rel="stylesheet" href="style.css">
+
+<html>
+
+	<head>
+    		<meta charset="UTF-8">
+    		 <link rel="stylesheet" href="style.css">
+			<title>🖕🏿f*ck eric adams🖕🏿</title>	 
+	</head>
+
+	<body>
+		
+
+    		<div id=question>
+    			<p class=alert id=questionOne>
+    				Great! We made it in time. We need a plan. <br> What should we organize to achieve first?
+    		</div>
+
+
+    		<button class="optionOne" id="baldie" onclick="alert('The robot is attacking us!')">Go for baldie</button>
+
+    		<button class="optionTwo" id="robot" onclick="nextPage()">Attack the robot</button>
+			 <script>
+        	function nextPage() {
+            window.location.href = 'questionFour.html';
+       			 }
+    		</script>
+
+			<audio id="hover-sound2">
+  				<source src="train.mp4" type="audio/mpeg">
+  				<source src="train.ogg" type="audio/ogg">	
+			</audio>
+
+	</body>
+
+
+</html>
+
+<script type="text/javascript">
+</script>
+<!javascript code below>
+<script src="javascript.js"></script>
