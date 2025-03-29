@@ -5,6 +5,11 @@ body {
   cursor: not-allowed;
 }
 
+#displayArt {
+  color: ghostwhite;
+  width: 50vw;
+
+}
 
 
 .alert {
