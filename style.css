@@ -69,7 +69,6 @@ body {
     bottom:15px;
     z-index:1;
     right:10;
-    padding-left:3px
     color: darkgray;
 }
 
@@ -99,7 +98,6 @@ a:active {
   left: 44%;
   top: 35%;
   transform: translate(-50%, -50%);s
-  font-weight: 400;
   white-space: nowrap;
   color: ghostwhite;
   text-align: center;
