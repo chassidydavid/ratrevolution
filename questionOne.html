@@ -20,7 +20,7 @@
 			</audio>
 
     		<div id=question>
-    			<p class=alert id=questionOne>
+    			<p class=alert id=Q1>
     				Quick! Follow me! We heard E*** A**** will be unveiling a surveillance robot at Times Square. <br> We have 30 minutes until it's unveiled. Which train should we catch?
     			</p>
     		</div>
@@ -36,6 +36,11 @@
   				<source src="4Train.ogg" type="audio/ogg">	
 			</audio>
 
+			<audio id="hover-sound5">
+  				<source src="biggestcity.mp4" type="audio/mpeg">
+  				<source src="biggestcity.ogg" type="audio/ogg">	
+			</audio>
+
 	</body>
 
 
@@ -49,10 +54,12 @@
             window.location.href = 'questionTwo.html';
        			 }
 
-       			const sound3 = document.getElementById('hover-sound3');
+       	const sound3 = document.getElementById('hover-sound3');
 				const sound4 = document.getElementById('hover-sound4');
+				const sound5 = document.getElementById('hover-sound5');
 				const button3 = document.getElementById('trainOne');
 				const button4 = document.getElementById('trainTwo');
+				const quote = document.getElementById('Q1');
 
 button3.addEventListener('mouseover', function() {
   sound3.play();
@@ -70,6 +77,15 @@ button4.addEventListener('mouseover', function() {
 button4.addEventListener('mouseout', function() {
   sound4.pause();
   sound4.currentTime = 0; // Reset to the beginning
+});
+
+quote.addEventListener('mouseover', function() {
+  sound5.play();
+});
+
+quote.addEventListener('mouseout', function() {
+  sound5.pause();
+  sound5.currentTime = 0; // Reset to the beginning
 });
 
 </script>

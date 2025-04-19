@@ -15,29 +15,29 @@
 	<body>
 		
 			<audio id="hover-sound9">
-  				<source src="turkey.mp4" type="audio/mpeg">
-  				<source src="turkey.ogg" type="audio/ogg">
-			</audio>		
+  				<source src="getlite.mp4" type="audio/mpeg">
+  				<source src="getlite.ogg" type="audio/ogg">
+			</audio>	
 
 			<audio id="hover-sound11">
-  				<source src="wherebitch.mp4" type="audio/mpeg">
-  				<source src="wherebitch.ogg" type="audio/ogg">
-			</audio>
+  				<source src="gotem.mp4" type="audio/mpeg">
+  				<source src="gotem.ogg" type="audio/ogg">
+			</audio>	
 
     		<div id=question>
-    			<p class=alert id=Q4>
-    				We successfully chewed through and damaged the infrastructure! The robot collapsed!<br> E*** A**** ran away. Where do you think he went?
+    			<p class=alert id=Q6>
+    					We caught him! He's right in the middle of the dance floor.<br>Let's stop him once and for all.<p>
     		</div>
 
 
-    		<button class="optionOne" id="plane" onclick="nextPage2()">Turkey</button>
+    		<button class="optionOne" id="dance" onclick="nextPage2()">Distract!</button>
 
-    		<button class="optionTwo" id="club" onclick="nextPage()">The Club</button>
+    		<button class="optionTwo" id="end" onclick="nextPage()">End</button>
 
 
 			<audio id="hover-sound10">
-  				<source src="clurb.mp4" type="audio/mpeg">
-  				<source src="clurb.ogg" type="audio/ogg">	
+  				<source src="glock.mp4" type="audio/mpeg">
+  				<source src="glock.ogg" type="audio/ogg">	
 			</audio>
 
 	</body>
@@ -47,19 +47,18 @@
 
 <script type="text/javascript">
 	function nextPage() {
-            window.location.href = 'questionSix.html';
+            window.location.href = 'final.html';
        			 }
-
 	function nextPage2() {
-            window.location.href = 'questionFive.html';
+            window.open('https://www.youtube.com/watch?v=x1Sxd7Eqc9E' );
        			 }
 
        	const sound9 = document.getElementById('hover-sound9');
 				const sound10 = document.getElementById('hover-sound10');
-				const sound11 = document.getElementById('hover-sound11')
-				const button9 = document.getElementById('plane');
-				const button10 = document.getElementById('club');
-				const quote = document.getElementById('Q4');
+				const sound11= document.getElementById('hover-sound11');
+				const button9 = document.getElementById('dance');
+				const button10 = document.getElementById('end');
+				const quote = document.getElementById('Q6');
 
 
 button9.addEventListener('mouseover', function() {
@@ -79,7 +78,6 @@ button10.addEventListener('mouseout', function() {
   sound10.pause();
   sound10.currentTime = 0; // Reset to the beginning
 });
-
 
 quote.addEventListener('mouseover', function() {
   sound11.play();

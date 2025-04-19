@@ -1,0 +1,140 @@
+
+
+body {
+  background: linear-gradient(-45deg, #000000, #000000, #000000, #F8F8FF, #F8F8FF, #F8F8FF);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 100vh;
+  font-family: arial, sans-serif;
+  font-weight: 400;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+#aboutflash {
+  position: absolute;
+  text-align: center;
+  left: 50%;
+  top: 7%;
+  transform: translate(-50%, -50%);
+  animation: blinker 2s step-start infinite;
+  text-align: center; 
+}
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+.instructions {
+  position: absolute;
+  text-align: left;
+  right: 80%;
+  top: 45%;
+  transform: translate(20%, -50%);
+}
+
+#cityinstructions {
+  color: ghostwhite;
+}
+
+.ericquote {
+  position: absolute;
+  text-align: right;
+  left: 82%;
+  top: 50%;
+  transform: translate(-30%, -50%);
+}
+
+#hide {
+  color: black; 
+}
+
+#show {
+  color: ghostwhite;
+}
+
+#thanks{
+  font-style: italic;
+  position: absolute;
+  text-align: right;
+  font-size: 0.875em;
+  left: 82%;
+  top: 80%;
+  transform: translate(-30%, -50%);
+}
+
+
+.asciibottom {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+  font-weight: 400;
+  white-space: nowrap;
+  color: ghostwhite;
+  text-align: center;
+}
+
+.ascii {
+  position: absolute;
+  font-weight: 400;
+  left: 50%;
+  top: 57%;
+  transform: translate(-50%, -50%);
+}
+
+#trap{
+ color: black;
+}
+
+.asciitop {
+  position: absolute;
+  right: 75%;
+  top: 10%;
+  transform: translate(-15%, 35%);
+  font-weight: 400;
+  color: black;
+  text-align: center;
+}
+
+
+#about {
+    position:absolute;
+    right:40px;
+    bottom:15px;
+    z-index:1;
+    right:10;
+    color: darkgray;
+}
+
+a:link {
+  text-decoration: none;
+  color: darkgray;
+}
+
+a:visited {
+  text-decoration: none;
+  color: darkgray;
+}
+
+a:hover {
+  text-decoration: none;
+  color: darkgray;
+}
+
+a:active {
+  text-decoration: none;
+  color: darkgray;
+}

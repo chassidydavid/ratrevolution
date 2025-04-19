@@ -18,8 +18,13 @@
   				<source src="stupid.ogg" type="audio/ogg">
 			</audio>
 
+			<audio id="hover-sound7">
+  				<source src="wherebitch.mp4" type="audio/mpeg">
+  				<source src="wherebitch.ogg" type="audio/ogg">	
+			</audio>
+
     		<div id=question>
-    			<p class=alert id=questionOne>
+    			<p class=alert id=Q2>
     				Great! We made it in time. We need a plan. <br> What should we organize to achieve first?
     		</div>
 
@@ -29,8 +34,8 @@
     		<button class="optionTwo" id="robot" onclick="nextPage()">Attack the robot</button>
 
 			<audio id="hover-sound6">
-  				<source src="robot.mp4" type="audio/mpeg">
-  				<source src="robot.ogg" type="audio/ogg">	
+  				<source src="robot2.mp4" type="audio/mpeg">
+  				<source src="robot2.ogg" type="audio/ogg">	
 			</audio>
 
 	</body>
@@ -43,10 +48,12 @@
             window.location.href = 'questionThree.html';
        			 }
 
-       			const sound5 = document.getElementById('hover-sound5');
+       	const sound5 = document.getElementById('hover-sound5');
 				const sound6 = document.getElementById('hover-sound6');
+				const sound7 = document.getElementById('hover-sound7');
 				const button5 = document.getElementById('baldie');
 				const button6 = document.getElementById('robot');
+				const quote = document.getElementById('Q2');
 
 button5.addEventListener('mouseover', function() {
   sound5.play();
@@ -65,6 +72,16 @@ button6.addEventListener('mouseout', function() {
   sound6.pause();
   sound6.currentTime = 0; // Reset to the beginning
 });
+
+quote.addEventListener('mouseover', function() {
+  sound7.play();
+});
+
+quote.addEventListener('mouseout', function() {
+  sound7.pause();
+  sound7.currentTime = 0; // Reset to the beginning
+});
+
 </script>
 <!javascript code below>
 <script src="javascript.js"></script>

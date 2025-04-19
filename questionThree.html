@@ -15,24 +15,28 @@
 	<body>
 		
 			<audio id="hover-sound7">
-  				<source src="rat.mp4" type="audio/mpeg">
-  				<source src="rat.ogg" type="audio/ogg">
+  				<source src="chew2.mp4" type="audio/mpeg">
+  				<source src="chew2.ogg" type="audio/ogg">
 			</audio>
 
-    		<div id=question>
-    			<p class=alert id=questionOne>
-    				We're inside the robot. <br> What now?
+			<audio id="hover-sound9">
+  				<source src="kansas.mp4" type="audio/mpeg">
+  				<source src="kansas.ogg" type="audio/ogg">
+			</audio>
+
+    		<div id=questionCSS>
+    			<p class=alert id=Q3>We're inside the robot. <br> What now?</p>
     		</div>
 
 
-    		<button class="optionOne" id="chew" onclick="alert('Harder!')">Chew</button>
+    		<button class="optionOne" id="chew" onclick="alert('Harder!')">Chew everything</button>
 
-    		<button class="optionTwo" id="piss" onclick="nextPage()">Piss</button>
+    		<button class="optionTwo" id="piss" onclick="nextPage()">Piss everywhere</button>
 		
 
 			<audio id="hover-sound8">
-  				<source src="chew.mp4" type="audio/mpeg">
-  				<source src="chew.ogg" type="audio/ogg">	
+  				<source src="piss.mp4" type="audio/mpeg">
+  				<source src="piss.ogg" type="audio/ogg">	
 			</audio>
 
 	</body>
@@ -45,10 +49,12 @@
             window.location.href = 'questionFour.html';
        			 }
 
-       			const sound7 = document.getElementById('hover-sound7');
+       	const sound7 = document.getElementById('hover-sound7');
 				const sound8 = document.getElementById('hover-sound8');
+				const sound9 = document.getElementById('hover-sound9');
 				const button7 = document.getElementById('chew');
 				const button8 = document.getElementById('piss');
+				const quote = document.getElementById('Q3');
 
 button7.addEventListener('mouseover', function() {
   sound7.play();
@@ -67,6 +73,17 @@ button8.addEventListener('mouseout', function() {
   sound8.pause();
   sound8.currentTime = 0; // Reset to the beginning
 });
+
+quote.addEventListener('mouseover', function() {
+  sound9.play();
+});
+
+quote.addEventListener('mouseout', function() {
+  sound9.pause();
+  sound9.currentTime = 0; // Reset to the beginning
+});
+
+
 </script>
 <!javascript code below>
 <script src="javascript.js"></script>
