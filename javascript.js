@@ -88,7 +88,7 @@ function password(){
 		//maybe give you the bad ending
 	//}
 	else {
-		console.log("OPP!")
+		console.log("⚠️ OPP!")
 		//gives you a hint 
 		if (passwordGuessedTimes == 1){
 			console.log("hint: who makes you miss DeBlasio?");
