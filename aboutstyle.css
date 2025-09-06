@@ -73,6 +73,7 @@ body {
   left: 82%;
   top: 80%;
   transform: translate(-30%, -50%);
+  color: black;
 }
 
 
@@ -121,20 +122,20 @@ body {
 
 a:link {
   text-decoration: none;
-  color: darkgray;
+  color: black;
 }
 
 a:visited {
   text-decoration: none;
-  color: darkgray;
+  color: black;
 }
 
 a:hover {
   text-decoration: none;
-  color: darkgray;
+  color: white;
 }
 
 a:active {
   text-decoration: none;
-  color: darkgray;
+  color: black;
 }

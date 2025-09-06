@@ -72,7 +72,7 @@ function password(){
 	passwordGuessedTimes = passwordGuessedTimes + 1;
 	let input = window.prompt("","enter the password to proceed...");
 	if (input === 'FUCK ERIC ADAMS') {
-		console.log("Yuuuur. Follow me.")
+		console.log("Yuuuur. Close out the console and follow me.")
 		console.warn("Don't forget to look up. Are you ready to play?")
 		function Q1() {
 			    //window.location.href = 'questionOne.html';
@@ -94,13 +94,16 @@ function password(){
 			console.log("hint: who makes you miss DeBlasio?");
 			}		
 		else if (passwordGuessedTimes == 2){
-			console.log("hint: listen to the warning...the browser never lies");
+			console.log("hint: listen to the warning...the browser tab never lies");
 			}	
 		else if (passwordGuessedTimes == 3){
 			console.log("hint: keep an eye on the tab...");
 			}	
 		else if (passwordGuessedTimes == 4){
 			console.log("hint: SAY IT WITH YOUR CHEST!");
+			}		
+		else if (passwordGuessedTimes == 5){
+			console.log("hint: that means ALL CAPS");
 			}
 			// etc etc, until
 		else {
